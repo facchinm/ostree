@@ -53,7 +53,7 @@ typedef struct {
 
   SoupSession *session;  /* not referenced */
   GMainContext *main_context;
-  volatile gint running;
+  gint running;
   GError *initialization_error; /* Any failure to load the db */
 
   char *remote_name;
